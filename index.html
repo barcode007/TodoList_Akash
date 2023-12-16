@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div id="container">
+        <center><img src="img/rocket.svg"><span id="to"> to</span><span id="do">do</span></center>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" placeholder="Enter the task name" required/>
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" required/>
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+           <center> <button id="addTask">Add Task  <img id="plus" src=img/plus.svg></button></center>
+        </form>
+        <div id="taskList"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
